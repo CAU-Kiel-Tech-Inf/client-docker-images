@@ -5,6 +5,6 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip install stable-baselines # installs the OpenAI package gym as dependency
+RUN pip install --upgrade numpy stable-baselines # installs the OpenAI package gym as dependency
 
 CMD /bin/bash
